@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "34.217.71.92",
+  "port": "22",
+  "target": "/var/www/html/",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "ubuntu",
+  "keyfile": "C:\\Users\\admin\\github\\Chewbacca.pem",
+  "watch": [],
+  "transport": "scp"
+}
