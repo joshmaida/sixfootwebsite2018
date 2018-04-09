@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Test</title>
+<script type="text/javascript">
+  var imageURLs = [
+       "img/slider/unsized/prs04.jpg"
+     , "img/slider/unsized/prs05.jpg"
+     , "img/slider/unsized/prs06.jpg"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>';
+    return img;
+  }
+</script>
+</head>
+<body>
+<script type="text/javascript">
+  document.write(getImageTag());
+</script>
+</body>
+</html>
