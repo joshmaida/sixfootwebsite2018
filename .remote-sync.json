@@ -13,7 +13,7 @@
     ".git/**"
   ],
   "username": "ubuntu",
-  "keyfile": "C:\\Users\\admin\\github\\Chewbacca.pem",
+  "keyfile": "C:\\keys\\Chewbacca.pem",
   "watch": [],
   "transport": "scp"
 }
