@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>White - Minimal Portfolio Template</title>
+        <title>Six Foot | Contact Us</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- favicon icon -->
@@ -127,36 +127,46 @@
 		</div>
 		<!-- basic-breadcrumb end -->
 
-		<!-- basic-contact-area -->
+	<!-- basic-contact-area -->
 		<div class="basic-contact-area pt-90 pb-50">
 			<div class="container">
 				<div class="row multi-columns-row">
 					<div class="col-sm-4 col-md-4 col-lg-4 mb-40">
 						<div class="contact-person">
-							<h4>Chief Editor</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-							<a href="mailto:#">chief@basictheme.net</a>
+							<h4>LOS ANGELES</h4>
+							<p>
+                4223 Glencoe Avenue, Suite C125<br>
+                Marina Del Rey, California 90292<br>
+                Tel: 310.306.9150
+              </p>
 						</div>
 					</div>
 
 					<div class="col-sm-4 col-md-4 col-lg-4 mb-40">
-						<div class="contact-person">
-							<h4>Technical Director</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-							<a href="mailto:#">director@basictheme.net</a>
+            <div class="contact-person">
+							<h4>HOUSTON</h4>
+							<p>
+                2415 W. Alabama, Suite 208<br>
+                Houston, Texas 77098<br>
+                Tel: 713.522.4638
+              </p>
 						</div>
 					</div>
 
 					<div class="col-sm-4 col-md-4 col-lg-4 mb-40">
-						<div class="contact-person">
-							<h4>Lead Designer</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-							<a href="mailto:#">designer@basictheme.net</a>
-						</div>
+            <div class="contact-person">
+              <h4>BERLIN</h4>
+              <p>
+                Am Treptower Park 28-30<br>
+                12435 Berlin<br>
+                Tel: +49 (0) 152 5899 8566
+              </p>
+            </div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<!-- basic-contact-area end -->
 
 		<div class="map-area">
@@ -164,48 +174,11 @@
 				<div id="map"></div>
 			</div>
 		</div>
+    <div class="area-title text-center pt-40">
+      <p>For general inquiries</p>
+      <a class="btn pt-40" a href="mailto:info@6ft.com" target="_blank">EMAIL INFO@6FT.COM</a>
+    </div>
 
-		<div class="basic-contact-form ptb-90">
-			<div class="container">
-				<div class="area-title text-center">
-					<h2>Let’s talk</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora veritatis nemo aut ea iusto eos est expedita, quas ab adipisci.</p>
-				</div>
-				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2">
-						<form id="contact-form" action="mail.php" method="post">
-							<div class="row">
-								<div class="col-md-6 form-group">
-									<label class="sr-only">First Name</label>
-									<input type="text" class="form-control input-lg" name="name" placeholder="First Name" >
-									<p class="help-block text-danger"></p>
-								</div>
-								<div class="col-md-6 form-group">
-									<label class="sr-only">Email</label>
-									<input type="email" class="form-control input-lg" name="email" placeholder="Email" >
-									<p class="help-block text-danger"></p>
-								</div>
-								<div class="col-md-12 form-group">
-									<label class="sr-only">Subject</label>
-									<input type="text" class="form-control input-lg" name="subject" placeholder="Subject" >
-									<p class="help-block text-danger"></p>
-								</div>
-								<div class="col-md-12 form-group">
-									<textarea class="form-control input-lg" rows="7" name="message" placeholder="Message*"></textarea>
-									<p class="help-block text-danger"></p>
-								</div>
-								<div class="col-md-12 text-center">
-									<button type="submit" class="btn btn-lg btn-round btn-dark">Send Email</button>
-								</div>
-
-							</div><!-- .row -->
-						</form>
-						<!-- Ajax response -->
-						<div class="ajax-response text-center"></div>
-					</div>
-				</div>
-			</div>
-		</div>
 
     <!-- footer start -->
 		<footer>
@@ -256,12 +229,12 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
+                    zoom: 3,
 
                     scrollwheel: false,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(29.7365163, -95.4208587), // New York
+                    center: new google.maps.LatLng(36.970336, -52.198340), // North Atlantic
 
                     // How you would like to style the map.
                     // This is where you would paste any style found on Snazzy Maps.
@@ -279,7 +252,20 @@
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(29.7365163, -95.4208587),
                     map: map,
-                    title: 'Snazzy!'
+                    title: 'Six Foot Houston'
+                });
+
+                var marker2 = new google.maps.Marker({
+                    position: new google.maps.LatLng(33.9874385, -118.4440889),
+                    map: map,
+                    title: 'Six Foot Los Angeles'
+                });
+
+                var marker3 = new google.maps.Marker({
+                    position: new google.maps.LatLng(52.4875098, 13.4609945),
+                    color: "#ff0",
+                    map: map,
+                    title: 'Six Foot Berlin'
                 });
             }
 		</script>
