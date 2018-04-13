@@ -4,7 +4,7 @@
 
 }
 
-
+ 
 /*--------- TSmall devices Tablets ------------*/
 @media (min-width: 768px) and (max-width: 991px) {
 .sm-100{width:100%}
@@ -28,7 +28,7 @@
 
 }
 
-
+ 
 /*------------ Extra small devices ------------*/
 @media (max-width: 767px) {
 .basic-menu li {
@@ -42,7 +42,7 @@
   width: 100%;
 }
 .area-title {
-  width: 90%;
+  width: 100%;
 }
 .call-to-action {
   text-align: left;
@@ -65,7 +65,7 @@
 }
 .portfolio-grid-2 .portfolio-item {
   width: 100%;
-}
+} 
 .portfolio-grid-4 .portfolio-item {
   width: 100%;
 }
@@ -89,19 +89,19 @@
   margin-bottom: 30px;
 }
 .header-transparent .mean-container a.meanmenu-reveal {
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
 }
 .header-transparent .mean-container a.meanmenu-reveal span {
-  background: #ddd none repeat scroll 0 0;
+  background: #fff none repeat scroll 0 0;
 }
 .slider-screen {
   height: 50vh;
 }
 
 
-
+ 
 }
-
+ 
 /*----------- Large Mobile -------------*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .portfolio-item {
@@ -109,9 +109,9 @@
 }
 .portfolio-grid-2 .portfolio-item {
   width: 50%;
-}
+} 
 .portfolio-grid-4 .portfolio-item {
   width: 50%;
 }
-
+ 
 }

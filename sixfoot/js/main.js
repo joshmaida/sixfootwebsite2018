@@ -6,44 +6,44 @@
 	var win = $(window);
 	win.on('load',function() {
 		$('.page-loader').delay(350).fadeOut('slow');
-	});
-
+	});	
+	
 	/* menu last class added */
 	$('ul.basic-menu>li').slice(-2).addClass('menu-p-right');
-
-
+	
+	
 	/* TOP Menu Stick  */
 	win.on('scroll',function() {
-	if ($(this).scrollTop() > 1){
+	if ($(this).scrollTop() > 1){  
 		$('#sticky-header').addClass("sticky");
 	  }
 	  else{
 		$('#sticky-header').removeClass("sticky");
 	  }
-	});
-
+	}); 
+	
 	/* meanmenu */
 	 $('#mobile-nav').meanmenu({
 		 meanMenuContainer: '.basic-mobile-menu',
 		 meanScreenWidth: "767"
 	 });
-
+	 
 	/* hamburgers menu option  */
     $('.hamburger').on('click', function() {
         $(this).toggleClass('is-active');
         $(this).next().toggleClass('nav-menu-show')
-    });
-
-
-
+    }); 
+	
+	
+	
 	/* imagesLoaded active */
 	$('#portfolio-grid,.blog-masonry').imagesLoaded( function() {
-
+		
 		/* Filter menu */
 		$('.filter-menu').on( 'click', 'button', function() {
 		  var filterValue = $(this).attr('data-filter');
 		  $grid.isotope({ filter: filterValue });
-		});
+		});	
 
 		/* filter menu active class  */
 		$('.filter-menu button').on('click', function(event) {
@@ -60,7 +60,7 @@
 			columnWidth: '.portfolio-item',
 		  }
 		});
-
+		
 		/* Filter active */
 		$('.blog-masonry').isotope({
 		  itemSelector: '.blog-item',
@@ -68,12 +68,12 @@
 		  masonry: {
 			columnWidth: '.blog-item',
 		  }
-		});
-
+		});			
+		
 	});
 
-
-
+	
+	
 	/* magnificPopup img view */
 	$('.popup-link').magnificPopup({
 		type: 'image',
@@ -86,7 +86,7 @@
 	$('.popup-video').magnificPopup({
 		type: 'iframe'
 	});
-
+	
 	/* counterUp */
 	$('.counter-number').counterUp();
 
@@ -107,8 +107,8 @@
 				items:1
 			}
 		}
-	})
-
+	})	
+	
 	/* portfolio-slider */
 	$('.portfolio-slider').owlCarousel({
 		loop:true,
@@ -125,8 +125,8 @@
 				items:1
 			}
 		}
-	})
-
+	})	
+	
 	/* portfolio-slider */
 	$('#related-active').owlCarousel({
 		loop:true,
@@ -149,8 +149,8 @@
 				items:5
 			}
 		}
-	})
-
+	})	
+	
 	/* portfolio-slider */
 	$('.blog-slider').owlCarousel({
 		loop:true,
@@ -169,7 +169,7 @@
 				items:1
 			}
 		}
-	})
+	})	
 
 	/* portfolio-slider */
 	$('.clients-active').owlCarousel({
@@ -193,7 +193,7 @@
 			}
 		}
 	})
-
+	
 	/* portfolio-slider */
 	$('.testimonial-active').owlCarousel({
 		loop:true,
@@ -214,8 +214,8 @@
 				items:1
 			}
 		}
-	})
-
+	})	
+	
 	$.scrollUp({
 		scrollName: 'scrollUp', // Element ID
 		topDistance: '300', // Distance from top before showing element (px)
@@ -224,9 +224,9 @@
 		animationInSpeed: 1000, // Animation in speed (ms)
 		animationOutSpeed: 1000, // Animation out speed (ms)
 		scrollText: '<i class="ion-chevron-up"></i>', // Text for element
-	});
-
-
+	});	
+	
+	
     /*----------------------------
     youtube video
     ------------------------------ */
@@ -236,9 +236,9 @@
         autoPlay: true,
         loop: true,
 		mute:true
-    });
+    });	
+	
 
 
 
-
-})(jQuery);
+})(jQuery);	

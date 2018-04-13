@@ -717,6 +717,7 @@ nav.nav-menu-show {
 }
 .portfolio-thumb img {
   width: 100%;
+
 }
 .portfolio-thumb {
   position: relative;
@@ -739,7 +740,7 @@ nav.nav-menu-show {
   right: 0;
   text-align: center;
   top: 50%;
-  opacity:0;
+  opacity:0; /*Modified by Josh */
   visibility:hidden;
   z-index:9;
   transition:.3s;
@@ -830,7 +831,7 @@ nav.nav-menu-show {
   background: #000 none repeat scroll 0 0;
 }
 .portfolio-style-4 .portfolio-wrapper:hover .portfolio-thumb::before {
-  opacity: 0.7;
+  opacity: 0;  /*Modified by Josh */
 }
 .portfolio-style-4 .portfolio-caption > h4 {
   color: #fff;
